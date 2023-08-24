@@ -5,6 +5,7 @@ const errorMessage = document.querySelector(".form-label-span");
 const cardContainer = document.querySelector(".card-container");
 const mockupContainer = document.querySelector(".mockup-container");
 const mockupEmail = document.querySelector(".mockup-email");
+const mockupButton = document.querySelector(".mockup-button");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -44,3 +45,9 @@ function showEmail() {
   const userInput = inputEmail.value;
   mockupEmail.textContent = userInput;
 }
+
+mockupButton.addEventListener("click", () => {
+  cardContainer.style.display = "flex";
+  mockupContainer.style.display = "none";
+  window.location.reload();
+});
