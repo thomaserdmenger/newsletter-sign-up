@@ -83,6 +83,10 @@ body {
   margin-bottom: 16.4375rem;
 }
 
+.mockup-email {
+  font-weight: 700;
+}
+
 .content-list {
   list-style: none;
   margin-bottom: 1.875rem;
