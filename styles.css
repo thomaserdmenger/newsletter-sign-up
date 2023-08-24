@@ -157,15 +157,21 @@ body {
 
 @media only screen and (min-width: 800px) {
   body {
-    display: grid;
-    place-items: center;
+    background: var(--color-dark-navy);
+    min-height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   /* CARD */
 
   .card-container {
     flex-direction: row-reverse;
-    padding: 2rem;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 36px;
+    box-shadow: 0px 15px 60px 0px rgba(0, 0, 0, 0.25);
   }
 
   /* IMAGE SECTION */
@@ -176,8 +182,23 @@ body {
 
   .hero-image-container-desktop img {
     display: block;
-    width: 100%;
   }
 
   /* CONTENT SECTION */
+
+  .content-container {
+    box-sizing: content-box;
+    max-width: 376px;
+    margin: 0 40px;
+    align-self: flex-start;
+  }
+
+  .content-heading {
+    margin-top: 4.5625rem;
+    font-size: 3.5rem;
+  }
+
+  .content-list {
+    margin-bottom: 2.5rem;
+  }
 }
