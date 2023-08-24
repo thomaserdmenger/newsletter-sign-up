@@ -99,6 +99,10 @@ body {
   line-height: 150%;
 }
 
+.form-label-span {
+  display: none;
+}
+
 .form-input {
   all: unset;
   border-radius: 8px;
@@ -137,19 +141,18 @@ body {
 
 /* ERROR HANDLING */
 
-.form-label-container span {
+.form-label-span-error--mod {
   font-size: 0.75rem;
   font-weight: 700;
   line-height: 150%;
   color: var(--color-vermellion);
-  display: none;
+  display: block;
 }
 
 .form-input-error--mod {
   border: 1px solid var(--color-vermellion);
   background-color: hsla(4, 100%, 67%, 0.15);
   color: var(--color-vermellion);
-  display: none;
 }
 
 @media only screen and (min-width: 800px) {
