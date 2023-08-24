@@ -21,10 +21,21 @@ body {
 
 /* CARD */
 
-.card-container {
+.card-container,
+.mockup-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.mockup-container {
+  display: none;
+  padding: 0 1.5rem;
+  align-items: flex-start;
+}
+
+.mockup-container--show {
+  display: flex;
 }
 
 /* IMAGE SECTION */
@@ -36,10 +47,6 @@ body {
 .hero-image-container-mobile img {
   min-width: 100%;
 }
-/* 
-.hero-image-container-desktop {
-  min-width: 100%;
-} */
 
 .hero-image-container-desktop img {
   display: none;
@@ -53,17 +60,27 @@ body {
   color: var(--color-dark-navy);
 }
 
-.content-heading {
+.content-heading,
+.mockup-heading {
   margin: 2.5rem 0 1.5rem 0;
   font-size: 2.5rem;
   font-weight: 700;
 }
 
-.content-para {
+.mockup-heading {
+  margin-top: 0;
+}
+
+.content-para,
+.mockup-para {
   font-size: 1rem;
   font-weight: 400;
   line-height: 150%;
   margin-bottom: 1.5rem;
+}
+
+.mockup-para {
+  margin-bottom: 16.4375rem;
 }
 
 .content-list {
@@ -119,7 +136,8 @@ body {
   color: var(--color-dark-navy);
 }
 
-.form-submit {
+.form-submit,
+.mockup-button {
   all: unset;
   box-sizing: border-box;
   margin-top: 1.5rem;
@@ -131,7 +149,8 @@ body {
   text-align: center;
 }
 
-.form-submit:active {
+.form-submit:active,
+.mockup-button:active {
   color: white;
   background: var(
     --gradient-1,
@@ -157,6 +176,10 @@ body {
 }
 
 /* MOCKUP CONTAINER */
+
+.mockup-image {
+  margin: 9.3125rem 0 2.5rem 0;
+}
 
 @media only screen and (min-width: 800px) {
   body {
