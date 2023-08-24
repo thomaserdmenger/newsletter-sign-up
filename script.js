@@ -3,6 +3,7 @@ const inputEmail = document.querySelector(".form-input");
 const errorMessage = document.querySelector(".form-label-span");
 
 const cardContainer = document.querySelector(".card-container");
+const mockupContainer = document.querySelector(".mockup-container");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -15,6 +16,7 @@ form.addEventListener("submit", (e) => {
   } else {
     errorHandlingDelete();
     removeCardContainer();
+    showMockup();
   }
 });
 
@@ -30,4 +32,8 @@ function errorHandlingDelete() {
 
 function removeCardContainer() {
   cardContainer.style.display = "none";
+}
+
+function showMockup() {
+  mockupContainer.classList.add("mockup-container--show");
 }
