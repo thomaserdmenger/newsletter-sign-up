@@ -163,6 +163,11 @@ body {
   box-shadow: 0px 16px 32px 0px rgba(255, 97, 85, 0.5);
 }
 
+.form-submit:hover,
+.mockup-button:hover {
+  cursor: pointer;
+}
+
 /* ERROR HANDLING */
 
 .form-label-span-error--mod {
